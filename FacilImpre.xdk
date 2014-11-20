@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "6077585d-e981-4b05-a633-6ce88109f281",
-      "lastModifiedDate": 1416446869659,
+      "lastModifiedDate": 1416493760585,
       "creationDate": 1416444942593
     },
     "XDK-app-designer": "true",
@@ -160,28 +160,28 @@
         ],
         "splashes_": [
           {
-            "relPath": "images/splash_320x426.jpg",
+            "relPath": "images/splash_320x426x.jpg",
             "density": "ldpi",
             "height": 426,
             "width": 320,
             "orientation": "portrait"
           },
           {
-            "relPath": "images/splash_320x470.jpg",
+            "relPath": "images/splash_320x470x.jpg",
             "density": "mdpi",
             "height": 470,
             "width": 320,
             "orientation": "portrait"
           },
           {
-            "relPath": "images/splash_480x640.jpg",
+            "relPath": "images/splash_480x640x.jpg",
             "density": "hdpi",
             "height": 640,
             "width": 480,
             "orientation": "portrait"
           },
           {
-            "relPath": "images/splash_960x720.jpg",
+            "relPath": "images/splash_960x720x.jpg",
             "density": "xhdpi",
             "height": 960,
             "width": 720,
