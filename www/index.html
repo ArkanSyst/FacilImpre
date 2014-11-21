@@ -5,6 +5,7 @@
   -->
 
     <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
         <meta charset="UTF-8">
         <title>Blank App Designer Project Template</title>
@@ -55,6 +56,10 @@
         <!-- for your init code, see README and file comments for details -->
         <script src="xdk/init-dev.js"></script>
         <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -63,7 +68,7 @@
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
         <div class="upage back_base base" id="mainpage">
             <div class="upage-outer">
-                <div class="upage-content content-area vertical-col left" id="page_86_70"></div>
+                <div class="upage-content content-area vertical-col" id="page_86_70"></div>
             </div>
             <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_1 rodape_size" data-uib="layout/footer" data-ver="0">
                 <h2></h2>
@@ -75,33 +80,146 @@
                 </div>
 
                 <div class="widget-container content-area horiz-area wrapping-col left">
-                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
-                        <img src="images/cal.png">
-                        <span class="uib-caption">Agenda</span>
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_6 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="home" href="#mainpage">
+                        <img src="images/home.png">
+
+                        <span class="uib-caption">Home</span>
                     </a>
-                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-button default-graphic-text widget uib_w_8 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-button default-graphic-text widget uib_w_8 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="sobre" href="#sobre1">
                         <img src="images/sobre.png">
                         <span class="uib-caption">Sobre</span>
                     </a>
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_4 d-margins media-button-text-bottom active-graphic-button" data-uib="media/graphic_button" data-ver="0">
-                        <img src="images/twitter.png">
-                        <span class="uib-caption">Twitter</span>
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_4 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="servicos" href="#servicos1">
+                        <img src="images/services.png">
+                        <span class="uib-caption">Serviços</span>
                     </a>
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-text widget uib_w_5 d-margins media-button-text-bottom active-graphic-button" data-uib="media/graphic_button" data-ver="0">
+                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="agenda" href="#agenda1">
+                        <img src="images/cal.png">
+                        <span class="uib-caption">Agenda</span>
+                    </a>
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_7 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="noticias" href="#noticias1">
+                        <img src="images/news.png">
+                        <span class="uib-caption">Notícias</span>
+                    </a>
+
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-text widget uib_w_5 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="fotos" href="#fotos1">
                         <img src="images/fotos.png">
                         <span class="uib-caption">Fotos</span>
-                    </a>
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_6 d-margins media-button-text-bottom active-graphic-button" data-uib="media/graphic_button" data-ver="0">
-                        <img src="images/loja.png">
-                        <span class="uib-caption">Loja</span>
-                    </a>
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_7 d-margins media-button-text-bottom active-graphic-button" data-uib="media/graphic_button" data-ver="0">
-                        <img src="images/news.png">
-                        <span class="uib-caption">Novidades</span>
                     </a>
 
                 </div>
                 <div class="widget-container content-area horiz-area wrapping-col right"></div>
+            </div>
+            <div id="sobre1" class="upage-content vertical-col hidden">
+
+                <div class="widget uib_w_9 d-margins iframe-size fundo_claro" data-uib="media/iframe" data-ver="0">
+                    <iframe frameborder="0" src="http://zcinco.com.br/app/FacilImpressos/sobre.html"></iframe>
+                </div>
+            </div>
+            <div id="servicos1" class="upage-content vertical-col left hidden">
+
+                <div class="panel-group no_wrap widget uib_w_11 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-2">
+                    <div class="panel widget uib_w_12 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-2">Serviço 1</a>
+       </h4>
+                        </div>
+                        <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+
+                                        <div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div>
+                                                <p>Serviço 1</p>
+                                                <p>Serviço 1</p>
+                                                <p>Serviço 1</p>
+                                                <p>Serviço 1</p>
+                                                <p>Serviço 1</p>
+                                            </div>
+                                        </div><span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel widget uib_w_13 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-7" data-parent="#bs-accordion-2">Serviço 2</a>
+       </h4>
+                        </div>
+                        <div id="bs-accordion-group-7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col uib_col_8 single-col" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+
+                                        <div class="widget uib_w_16 d-margins" data-uib="media/text" data-ver="0">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div>
+                                                <p>Serviço 2</p>
+                                                <p>Serviço 2</p>
+                                                <p>Serviço 2</p>
+                                                <p>Serviço 2</p>
+                                                <p>Serviço 2</p>
+                                                <p>Serviço 2</p>
+                                            </div>
+                                        </div><span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel widget uib_w_14 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-8" data-parent="#bs-accordion-2">Serviço 3</a>
+       </h4>
+                        </div>
+                        <div id="bs-accordion-group-8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col uib_col_9 single-col" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+
+                                        <div class="widget uib_w_17 d-margins" data-uib="media/text" data-ver="0">
+                                            <div class="widget-container left-receptacle"></div>
+                                            <div class="widget-container right-receptacle"></div>
+                                            <div>
+                                                <p>Serviço 3</p>
+                                                <p>Serviço 3</p>
+                                                <p>Serviço 3</p>
+                                                <p>Serviço 3</p>
+                                                <p>Serviço 3</p>
+                                                <p>Serviço 3</p>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div><span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="servicos"></div>
+        <div class="upage vertical-col left hidden" id="frame_sobre">
+            <div class="widget uib_w_10 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div>
+                    <p>PNG foi inventado pelo W3C e é livre, ou seja, trata-se de um código aberto e não proprietário e atualmente é o único formato gráfico para a Web que suporta transparência. Todos os modernos editores gráficos, tais como o PhotoShop</p>
+                    <p>e o Fireworks são capazes de gerar imagens PNG com o canal alpha, ou seja imagens transparentes.</p>
+                    <p>Assim, este é o formato web standard para transparência. Lamentavelmente o suporte oferecido pelos navegadores atuais ainda não é completo para este formato. A primeira versão do Internet Explorer a suportar PNG transparente é</p>
+                    <p>o IE7. Mas, como a quantidade de usuários com IE6 ainda é muito grande nos tempos atuais, nós desenvolvedores não podemos usar PNG transparente sem lançar mão de "hacks" para servir o Internet Explorer.</p>
+                    <p>Para que você veja uma PNG transparente em ação, desenvolvi uma página de demonstração de imagens PNG transparentes.</p>
+                    <p>Na página que você acabou de visualizar a imagem de um carro amarelo foi posicionada sobre uma DIV contendo um texto. O IE6 e anteriores simplemente ignoram a imagem e tudo se passa como se ela não estivesse ali. Contudo se você</p>
+                    <p>colocar o ponteiro do mouse sobre o local onde a imagem deveria estar aparece um tool-tip com o texto contido no atributo ALT do elemento IMG.</p>
+                </div>
             </div>
         </div>
     </body>
