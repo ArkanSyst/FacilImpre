@@ -60,6 +60,8 @@
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
         <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+
     </head>
 
     <body>
@@ -68,159 +70,90 @@
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
         <div class="upage back_base base" id="mainpage">
             <div class="upage-outer">
+
                 <div class="upage-content content-area vertical-col" id="page_86_70"></div>
             </div>
             <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_1 rodape_size" data-uib="layout/footer" data-ver="0">
                 <h2></h2>
                 <div class="widget-container wrapping-col single-centered">
 
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_7 d-margins active-graphic-button" data-uib="media/graphic_button" data-ver="0" id="home" href="#page_86_70">
+                        <img src="images/home.png">
+
+                        <span class="uib-caption"></span>
+                    </a>
                 </div>
                 <div class="widget-container wrapping-col single-centered">
 
                 </div>
 
                 <div class="widget-container content-area horiz-area wrapping-col left">
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_6 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="home" href="#mainpage">
-                        <img src="images/home.png">
 
-                        <span class="uib-caption">Home</span>
-                    </a>
-                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-button default-graphic-text widget uib_w_8 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="sobre" href="#sobre1">
-                        <img src="images/sobre.png">
-                        <span class="uib-caption">Sobre</span>
-                    </a>
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_4 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="servicos" href="#servicos1">
-                        <img src="images/services.png">
-                        <span class="uib-caption">Serviços</span>
-                    </a>
-                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="agenda" href="#agenda1">
-                        <img src="images/cal.png">
-                        <span class="uib-caption">Agenda</span>
-                    </a>
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_7 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="noticias" href="#noticias1">
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_4 d-margins active-graphic-button" data-uib="media/graphic_button" data-ver="0" href="#news" id="noticias">
                         <img src="images/news.png">
-                        <span class="uib-caption">Notícias</span>
+
+                        <span class="uib-caption"></span>
                     </a>
 
-                    <a class="uib-graphic-button default-graphic-sizing default-graphic-text widget uib_w_5 d-margins active-graphic-button media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="fotos" href="#fotos1">
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-text widget uib_w_5 d-margins active-graphic-button" data-uib="media/graphic_button" data-ver="0" id="agenda">
+                        <img src="images/cal.png">
+
+                        <span class="uib-caption"></span>
+                    </a>
+                </div>
+                <div class="widget-container content-area horiz-area wrapping-col right">
+                    <a class="uib-graphic-button default-graphic-sizing active-graphic-button default-graphic-text widget uib_w_3 d-margins" data-uib="media/graphic_button" data-ver="0" id="loja">
+                        <img src="images/loja.png">
+
+                        <span class="uib-caption"></span>
+                    </a>
+                    <a class="uib-graphic-button default-graphic-sizing default-graphic-button default-graphic-text widget uib_w_6 d-margins active-graphic-button" data-uib="media/graphic_button" data-ver="0" id="fotos">
                         <img src="images/fotos.png">
-                        <span class="uib-caption">Fotos</span>
+
+                        <span class="uib-caption"></span>
                     </a>
-
-                </div>
-                <div class="widget-container content-area horiz-area wrapping-col right"></div>
-            </div>
-            <div id="sobre1" class="upage-content vertical-col hidden">
-
-                <div class="widget uib_w_9 d-margins iframe-size fundo_claro" data-uib="media/iframe" data-ver="0">
-                    <iframe frameborder="0" src="http://zcinco.com.br/app/FacilImpressos/sobre.html"></iframe>
                 </div>
             </div>
-            <div id="servicos1" class="upage-content vertical-col left hidden">
 
-                <div class="panel-group no_wrap widget uib_w_11 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-2">
-                    <div class="panel widget uib_w_12 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-2">Serviço 1</a>
-       </h4>
-                        </div>
-                        <div id="bs-accordion-group-6" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
-                                    <div class="widget-container content-area vertical-col">
-
-                                        <div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0">
-                                            <div class="widget-container left-receptacle"></div>
-                                            <div class="widget-container right-receptacle"></div>
-                                            <div>
-                                                <p>Serviço 1</p>
-                                                <p>Serviço 1</p>
-                                                <p>Serviço 1</p>
-                                                <p>Serviço 1</p>
-                                                <p>Serviço 1</p>
-                                            </div>
-                                        </div><span class="uib_shim"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel widget uib_w_13 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-7" data-parent="#bs-accordion-2">Serviço 2</a>
-       </h4>
-                        </div>
-                        <div id="bs-accordion-group-7" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div class="col uib_col_8 single-col" data-uib="layout/col" data-ver="0">
-                                    <div class="widget-container content-area vertical-col">
-
-                                        <div class="widget uib_w_16 d-margins" data-uib="media/text" data-ver="0">
-                                            <div class="widget-container left-receptacle"></div>
-                                            <div class="widget-container right-receptacle"></div>
-                                            <div>
-                                                <p>Serviço 2</p>
-                                                <p>Serviço 2</p>
-                                                <p>Serviço 2</p>
-                                                <p>Serviço 2</p>
-                                                <p>Serviço 2</p>
-                                                <p>Serviço 2</p>
-                                            </div>
-                                        </div><span class="uib_shim"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel widget uib_w_14 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-8" data-parent="#bs-accordion-2">Serviço 3</a>
-       </h4>
-                        </div>
-                        <div id="bs-accordion-group-8" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div class="col uib_col_9 single-col" data-uib="layout/col" data-ver="0">
-                                    <div class="widget-container content-area vertical-col">
-
-                                        <div class="widget uib_w_17 d-margins" data-uib="media/text" data-ver="0">
-                                            <div class="widget-container left-receptacle"></div>
-                                            <div class="widget-container right-receptacle"></div>
-                                            <div>
-                                                <p>Serviço 3</p>
-                                                <p>Serviço 3</p>
-                                                <p>Serviço 3</p>
-                                                <p>Serviço 3</p>
-                                                <p>Serviço 3</p>
-                                                <p>Serviço 3</p>
-                                                <p>&nbsp;</p>
-                                            </div>
-                                        </div><span class="uib_shim"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div id="news" class="upage-content vertical-col left hidden">
+                <div class="list-group widget uib_w_11 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1"><a class="list-group-item allow-badge widget uib_w_12 listv_noticias" data-uib="twitter%20bootstrap/list_item" data-ver="1" href="#ver_noticia" id="not1"><span class="badge glyphicon glyphicon-chevron-right"></span>
+   <h4 class="list-group-item-heading">01/12/2014</h4>
+   <p class="list-group-item-text">Aleluia! YouTube finalmente ganha visual Material Design no Android</p>
+</a>
+                    <a class="list-group-item allow-badge widget uib_w_13 listv_noticias" data-uib="twitter%20bootstrap/list_item" data-ver="1"><span class="badge glyphicon glyphicon-chevron-right"></span>
+                        <h4 class="list-group-item-heading">04/12/2014</h4>
+                        <p class="list-group-item-text">Esta é a noticia 2 e seu conteudo, Esta é a noticia 2 e seu conteudo</p>
+                    </a>
+                    <a class="list-group-item allow-badge widget uib_w_14 listv_noticias" data-uib="twitter%20bootstrap/list_item" data-ver="1"><span class="badge glyphicon glyphicon-chevron-right"></span>
+                        <h4 class="list-group-item-heading">06/12/2014</h4>
+                        <p class="list-group-item-text">Esta é a noticia 3 e seu conteudo, Esta é a noticia 3 e seu conteudo, Esta é a noticia 3 e seu conteudo</p>
+                    </a>
+                </div>
+            </div>
+            <div id="ver_noticia" class="upage-content vertical-col left hidden">
+                <div class="widget uib_w_15 d-margins repete listv_noticias textos_noticias margens_p" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>01/12/2014</p>
+                        <p><strong>Aleluia! YouTube finalmente ganha visual Material Design no Android.</strong>
+                        </p>
+                        <p>Chegou a hora de uma das atualizações mais esperadas de aplicativos da Google para o estilo visual do Android Lollipop, o Material Design. O serviço de streaming de vídeos YouTube é a mais nova ferramenta que recebeu uma "plástica"</p>
+                        <p>na nova versão.</p>
+                        <p>&nbsp;</p>
+                        <p>O app agora conta com um predomínio ainda maior da cor vermelha, grande marca do site. Ele está bem diferente em relação ao site do YouTube, apesar de contar com as mesmas funções. O painel de navegação inteiro ganhou um ar mais</p>
+                        <p>minimalista e dinâmico. Os itens adicionais não são muitos, mas novos filtros de busca já foram identificados pelos usuários e a janela "O que assistir" foi uma das mais alteradas.</p>
+                        <p>&nbsp;</p>
+                        <p>A atualização do YouTube que implementa o Material Design é a 6.0.11. Fique atento para o surgimento do download: até a publicação desta notícia, ele ainda não estava disponível na Google Play, o que significa que nem todos os</p>
+                        <p>aparelhos já começaram a receber o visual. Até o momento, vários serviços da empresa já receberam a atualização visual.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="upage vertical-col left hidden" id="servicos"></div>
-        <div class="upage vertical-col left hidden" id="frame_sobre">
-            <div class="widget uib_w_10 d-margins" data-uib="media/text" data-ver="0">
-                <div class="widget-container left-receptacle"></div>
-                <div class="widget-container right-receptacle"></div>
-                <div>
-                    <p>PNG foi inventado pelo W3C e é livre, ou seja, trata-se de um código aberto e não proprietário e atualmente é o único formato gráfico para a Web que suporta transparência. Todos os modernos editores gráficos, tais como o PhotoShop</p>
-                    <p>e o Fireworks são capazes de gerar imagens PNG com o canal alpha, ou seja imagens transparentes.</p>
-                    <p>Assim, este é o formato web standard para transparência. Lamentavelmente o suporte oferecido pelos navegadores atuais ainda não é completo para este formato. A primeira versão do Internet Explorer a suportar PNG transparente é</p>
-                    <p>o IE7. Mas, como a quantidade de usuários com IE6 ainda é muito grande nos tempos atuais, nós desenvolvedores não podemos usar PNG transparente sem lançar mão de "hacks" para servir o Internet Explorer.</p>
-                    <p>Para que você veja uma PNG transparente em ação, desenvolvi uma página de demonstração de imagens PNG transparentes.</p>
-                    <p>Na página que você acabou de visualizar a imagem de um carro amarelo foi posicionada sobre uma DIV contendo um texto. O IE6 e anteriores simplemente ignoram a imagem e tudo se passa como se ela não estivesse ali. Contudo se você</p>
-                    <p>colocar o ponteiro do mouse sobre o local onde a imagem deveria estar aparece um tool-tip com o texto contido no atributo ALT do elemento IMG.</p>
-                </div>
-            </div>
+        <div class="widget uib_w_10 d-margins" data-uib="media/text" data-ver="0">
+            <div class="widget-container left-receptacle"></div>
+            <div class="widget-container right-receptacle"></div>
+
         </div>
     </body>
 

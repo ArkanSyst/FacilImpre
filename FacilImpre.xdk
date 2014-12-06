@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "6077585d-e981-4b05-a633-6ce88109f281",
-      "lastModifiedDate": 1416493760585,
+      "lastModifiedDate": 1417874337338,
       "creationDate": 1416444942593
     },
     "XDK-app-designer": "true",
@@ -130,7 +130,7 @@
         },
         "isActive_": true,
         "appName_": "Fácil Impressos",
-        "appID_": "xdk.intel.ad.project",
+        "appID_": "xdk.intel.ad.facilimpressos2014",
         "appAccess_": "*",
         "icons_": [
           {

@@ -18,10 +18,10 @@
     
     
         /* graphic button  home */
-    $(document).on("click", "#home", function(evt)
-    {
-         activate_subpage("#page_86_70"); 
-    });
+    
+    
+        /* graphic button  servicos */
+    
     
         /* graphic button  servicos */
     
@@ -29,7 +29,37 @@
         /* graphic button  servicos */
     $(document).on("click", "#servicos", function(evt)
     {
-         activate_subpage("#servicos1"); 
+         activate_subpage("#servi"); 
+    });
+    
+        /* graphic button  noticias */
+    
+    
+        /* graphic button  noticias */
+    
+    
+        /* graphic button  noticias */
+    
+    
+        /* graphic button  noticias */
+    $(document).on("click", "#noticias", function(evt)
+    {
+         activate_subpage("#news"); 
+    });
+    
+        /* listitem  not1 */
+    $(document).on("click", "#not1", function(evt)
+    {
+         activate_subpage("#ver_noticia"); 
+    });
+    
+        /* graphic button  home */
+    
+    
+        /* graphic button  home */
+    $(document).on("click", "#home", function(evt)
+    {
+         activate_subpage("#page_86_70"); 
     });
     
     }
